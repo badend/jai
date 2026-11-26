@@ -99,7 +99,7 @@ li { list-style: none; }
   position: sticky;
   top: 0;
   z-index: 50;
-  background: transparent;
+  background: var(--paper);
   -webkit-backdrop-filter: saturate(180%) blur(12px);
   backdrop-filter: saturate(180%) blur(12px);
   border-bottom: 1px solid transparent;
@@ -188,17 +188,6 @@ li { list-style: none; }
   overflow: hidden;
 }
 
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: -20% -10% auto -10%;
-  height: 120%;
-  background:
-    radial-gradient(60% 55% at 78% 18%, rgba(29, 75, 60, 0.07), transparent 70%),
-    radial-gradient(45% 45% at 8% 0%, rgba(22, 21, 15, 0.05), transparent 70%);
-  pointer-events: none;
-}
-
 .hero .wrap { position: relative; }
 
 .eyebrow {
@@ -224,7 +213,7 @@ li { list-style: none; }
   line-height: 1.18;
   letter-spacing: -0.03em;
   font-weight: 400;
-  max-width: 24ch;
+  max-width: none;
 }
 
 .hero-foot {
@@ -239,7 +228,7 @@ li { list-style: none; }
 }
 
 .hero-lede {
-  max-width: 46ch;
+  max-width: 34em;
   font-size: clamp(0.96rem, 1.35vw, 1.06rem);
   line-height: 1.85;
   color: var(--ink-soft);
@@ -349,7 +338,7 @@ li { list-style: none; }
 }
 
 .section-lede {
-  max-width: 52ch;
+  max-width: 32em;
   color: var(--muted);
   font-size: clamp(0.94rem, 1.2vw, 1rem);
   font-weight: 400;
@@ -382,8 +371,9 @@ li { list-style: none; }
 
 .practice-main {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: clamp(18px, 3vw, 48px);
+  grid-template-columns: 0.9fr 1.1fr;
+  column-gap: clamp(20px, 3.4vw, 56px);
+  row-gap: 0;
   align-items: start;
 }
 
@@ -467,7 +457,8 @@ li { list-style: none; }
   font-size: clamp(1.5rem, 3vw, 2.35rem);
   line-height: 1.42;
   letter-spacing: -0.03em;
-  max-width: 24ch;
+  max-width: 19em;
+  font-size: clamp(1.42rem, 2.7vw, 2.15rem);
 }
 
 .company-body {
@@ -545,7 +536,7 @@ li { list-style: none; }
   font-weight: 400;
   line-height: 1.85;
   color: var(--muted);
-  max-width: 42ch;
+  max-width: 30em;
 }
 
 /* ── Contact ────────────────────────────────────────────── */
@@ -566,7 +557,7 @@ li { list-style: none; }
 }
 
 .contact-body {
-  max-width: 46ch;
+  max-width: 30em;
 }
 .contact-body p {
   color: var(--ink-soft);
