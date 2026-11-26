@@ -42,6 +42,8 @@ body {
   font-size: 16px;
   line-height: 1.72;
   letter-spacing: -0.01em;
+  word-break: keep-all;
+  overflow-wrap: break-word;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -58,6 +60,7 @@ h1, h2, h3, h4 {
   line-height: 1.22;
   margin: 0;
   text-wrap: balance;
+  word-break: keep-all;
 }
 
 p { margin: 0; }
@@ -96,7 +99,7 @@ li { list-style: none; }
   position: sticky;
   top: 0;
   z-index: 50;
-  background: color-mix(in srgb, var(--paper) 86%, transparent);
+  background: transparent;
   -webkit-backdrop-filter: saturate(180%) blur(12px);
   backdrop-filter: saturate(180%) blur(12px);
   border-bottom: 1px solid transparent;
@@ -217,11 +220,11 @@ li { list-style: none; }
 }
 
 .hero-title {
-  font-size: clamp(2.35rem, 7.1vw, 5.1rem);
-  line-height: 1.1;
-  letter-spacing: -0.035em;
+  font-size: clamp(2.1rem, 5.1vw, 4.15rem);
+  line-height: 1.18;
+  letter-spacing: -0.03em;
   font-weight: 400;
-  max-width: 17ch;
+  max-width: 24ch;
 }
 
 .hero-foot {
@@ -237,10 +240,10 @@ li { list-style: none; }
 
 .hero-lede {
   max-width: 46ch;
-  font-size: clamp(0.95rem, 1.35vw, 1.06rem);
+  font-size: clamp(0.96rem, 1.35vw, 1.06rem);
   line-height: 1.85;
   color: var(--ink-soft);
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .hero-links {
@@ -349,7 +352,7 @@ li { list-style: none; }
   max-width: 52ch;
   color: var(--muted);
   font-size: clamp(0.94rem, 1.2vw, 1rem);
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.85;
 }
 
@@ -405,7 +408,7 @@ li { list-style: none; }
   grid-column: 2;
   color: var(--ink-soft);
   font-size: 0.955rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.88;
 }
 
@@ -476,7 +479,7 @@ li { list-style: none; }
   border-top: 1px solid var(--line);
   color: var(--ink-soft);
   font-size: 0.955rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.9;
 }
 
@@ -539,7 +542,7 @@ li { list-style: none; }
 
 .principles p {
   font-size: 0.94rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.85;
   color: var(--muted);
   max-width: 42ch;
@@ -568,7 +571,7 @@ li { list-style: none; }
 .contact-body p {
   color: var(--ink-soft);
   font-size: 0.98rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.9;
   margin-bottom: 28px;
 }
