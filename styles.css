@@ -9,7 +9,7 @@
   --paper-alt:  #efece5;
   --ink:        #16150f;
   --ink-soft:   #2b2a22;
-  --muted:      #6c6960;
+  --muted:      #5b584f;
   --line:       #dbd6cb;
   --line-soft:  #e6e2d9;
   --accent:     #1d4b3c;
@@ -543,21 +543,21 @@ li { list-style: none; }
 .contact { border-top: 1px solid var(--line); }
 .contact-in {
   display: grid;
-  grid-template-columns: 220px 1fr;
-  gap: clamp(24px, 4vw, 64px);
+  grid-template-columns: 220px 1fr 1fr;
+  gap: clamp(24px, 4vw, 56px);
   align-items: start;
 }
-.contact .label { padding-top: 6px; }
+.contact .label { padding-top: 10px; }
 
 .contact-title {
-  font-size: clamp(1.9rem, 4.4vw, 3.1rem);
-  line-height: 1.18;
+  font-size: clamp(1.7rem, 3.4vw, 2.6rem);
+  line-height: 1.24;
   letter-spacing: -0.035em;
-  margin-top: 18px;
 }
 
 .contact-body {
   max-width: 30em;
+  padding-top: 4px;
 }
 .contact-body p {
   color: var(--ink-soft);
