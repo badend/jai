@@ -622,14 +622,14 @@ li { list-style: none; }
 .foot-top a { transition: color 0.2s var(--ease); }
 .foot-top a:hover { color: var(--ink); }
 
-/* ── Reveal ─────────────────────────────────────────────── */
-.reveal {
+/* ── Reveal (only when JS is available) ─────────────────── */
+.js .reveal {
   opacity: 0;
   transform: translateY(14px);
   transition: opacity 0.85s var(--ease), transform 0.85s var(--ease);
   will-change: opacity, transform;
 }
-.reveal.in {
+.js .reveal.in {
   opacity: 1;
   transform: none;
 }
@@ -689,7 +689,7 @@ li { list-style: none; }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .reveal { opacity: 1; transform: none; transition: none; }
+  .js .reveal { opacity: 1; transform: none; transition: none; }
   * { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
 }
 
@@ -697,5 +697,5 @@ li { list-style: none; }
   .site-head, .hero::before, .foot-top { display: none; }
   body { background: #fff; }
   .section, .quote-band { padding-block: 28px; }
-  .reveal { opacity: 1; transform: none; }
+  .js .reveal { opacity: 1; transform: none; }
 }
